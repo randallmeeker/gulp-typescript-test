@@ -12,7 +12,8 @@ var paths = {
 // TypeScript
 var tsProject = ts.createProject({
    noExternalResolve: true,
-   target : 'ES5'
+   target : 'ES5',
+   typescript: require('typescript')
 });
 gulp.task('build-ts', function(){
 
